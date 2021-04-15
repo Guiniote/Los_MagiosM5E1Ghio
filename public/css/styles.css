@@ -1,0 +1,514 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Roboto';        
+    background-color: #ebebeb; 
+}
+
+input, button, ::-webkit-file-upload-button {
+    border-width: 1px;
+    border-radius: 4.5px;
+    padding: 4px 2px 4px 2px;
+    
+}
+
+    header {
+        background-color: #EAC926;
+        color: #03264C;
+        font-size: 12px;
+    }
+
+        .encabezado {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 20px;
+        }
+
+            .logo {
+                /*flex: 1 1 45%;*/
+                width: 50%;
+            }
+
+            .buscador {
+                /*flex: 1 1 45%;*/
+                width: 50%;
+                margin: auto;
+                text-align: center;
+                padding-left: 10px;
+                display: flex;
+                flex-flow: row wrap;
+                align-items: baseline;
+                justify-content: center;
+            }
+
+                .buscador form {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                /*.buscador button {
+                    width: 15%;
+                    height: 100%;
+                    padding: 2px;
+                }*/
+                .buscador button {
+                    width: 23px;
+                    height: 25px;
+                    padding: 2px;
+                }
+            
+                .boxbuscador {
+                    width: 80%;
+                    height: 100%;
+                }
+
+                .fa-search {
+                    padding: 1px;
+                    padding-top: 3px;
+                    background-color: #ebebeb;                    
+                }
+
+            #lema {
+                text-align: center;
+                flex: 1 1 auto;
+                margin: auto;                
+                padding-top: 15px;
+            }
+        
+        
+            .site_navbar {
+                display: none;
+                text-decoration: none;
+            }
+
+            .login_navbar {
+                display: none;
+                text-decoration: none;
+            }
+
+                .site_navbar a, .login_navbar a {
+                    text-decoration: none;
+                    color: #03264C;
+                }
+
+        .burger-menu {
+            text-align: center;
+        }
+
+        .fa-bars {
+            font-size: 20px;
+            background-color: #1259c3;
+            color: white;
+            padding: 5px;
+            border: 0.5px solid #1259c3;
+            border-radius: 5px;
+        }
+
+
+
+    main {
+        margin: auto;
+        width: 90%;    
+    }
+
+        section {            
+            font-size: 24px;        
+        }
+
+            .titulares {
+                padding-top: 24px;
+                padding-bottom: 8px;
+            }
+
+            .contenido {
+                height: 300px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: stretch;
+            }
+
+                article {
+                    font-size: 16px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    background-color: white;   
+                    transition: box-shadow 300ms;             
+                }
+
+                    .imagen {
+                        background-color: white;
+                    }
+
+                    .infoart {
+                        border-top: 1px solid #ebebeb;
+                        padding: 6%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-around;
+                        /*align-items: flex-end;*/
+                        align-items: baseline;
+                        position: relative;
+                    }
+                    
+                        .camion {
+                            background-color: white;
+                            height: 0px;
+                        }
+
+                        .fa-truck {
+                            color: #39b54a;
+                            padding: 8px 6px;
+                            border: 1px solid #39b54a;
+                            border-radius: 50%;
+                            position: absolute;
+                            right: 7%;
+                            top: -17px;           
+                        }
+
+                        .precio {
+                            font-size: 18px;
+                            margin-top: 5px;
+                            margin-bottom: 5px;
+                            /*flex: 1 1 30%;*/
+                            width: 30%;
+                        }
+
+                        .descuentos {
+                            color: #39b54a;
+                            margin-top: 5px;
+                            margin-bottom: 5px;
+                            /*flex: 1 1 70%;*/
+                            width: 70%;
+                        }
+                        
+                        .descripciones {
+                            display: none;
+                            flex: 1 1 100%;
+                            color: #666;
+                            font-weight: bold;
+                            text-align: left;
+                            margin-top: 12px;
+                            margin-bottom: 12px;                            
+                        }
+
+                        main section article:hover p.descripciones {                            
+                            display: block;                            
+                        }
+
+                        article:hover {
+                            box-shadow: 0px 0px 10px rgb(100,100,100);
+                        }
+
+    
+        .register, .login {
+            margin-top: 30px;
+        }
+
+            .register .campo, .login .campo {
+                display: flex;
+                padding: 5px;
+                align-items: baseline;
+            }
+
+                .register .campo input, .login .campo input {
+                    margin-left: 5px;                
+                    width: 53%;                                
+                }
+
+                .register .campo_categorias input, .register .opciones_radio input {
+                    margin-left: 5px;                
+                    width: 15%;
+                }
+
+                .register .campo label, .register .campo_foto label, .login .campo label {
+                    font-size: 14px;
+                    font-weight: bold;
+                    width: 45%;
+                }
+
+                    .register .campo_categorias label, .register .opciones_radio label {
+                        font-weight: normal;
+                    }
+
+                    .register .opcion {
+                        width: 100%;
+                        margin-bottom: 5px;
+                    }
+            
+            .register .campo_foto {
+                padding: 5px;
+                align-items: baseline;
+            }
+
+                .register .campo_foto input {
+                    width: 100%;   
+                    margin-top: 5px;                             
+                    margin-bottom: 10px;                             
+                }
+
+                .register .campo_foto label {
+                    font-size: 14px;
+                    width: 100%;                    
+                }
+
+            .register .campo_categorias, .register .opciones_radio {
+                font-size: 14px;
+                width: 53%;
+            }
+
+                .register .opcion_radio {
+                    display: block;
+                    align-items: flex-end;
+                    text-align: center;
+                    margin-right: 10px;
+                }
+
+            .register .botones, .login .botones {
+                text-align: center;                        
+            }
+            
+                .register .botones button, .login .botones button {
+                    padding: 2px 5px 2px 5px;
+                    margin: 40px 20px 60px 20px;
+                    transition: background-color 100ms;                                            
+                }
+
+                .register ::-webkit-file-upload-button {
+                    padding: 2px 5px 2px 5px;
+                }
+
+                .login .botones button {
+                    margin: 40px 20px 120px 20px;
+                    transition: background-color 100ms;
+                }
+
+                .login .botones button:hover, .register .botones button:hover, ::-webkit-file-upload-button:hover {
+                    background-color: #0022AA;
+                    color: white;
+                }
+
+
+    footer {
+        text-align: center;
+        color: #666;
+        font-size: 10px;
+        background-color: white; 
+    }
+
+    footer .item {
+        padding-top: 25px;
+    }
+
+        .titulosfooter {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 0px;
+            margin-top: 2px;
+        }
+
+        .textofooter {
+            margin-top: 1px;
+            margin-left: 60px;
+            margin-right: 60px;
+        }
+
+        .fa-credit-card {
+            color: #1259c3;
+            font-size: 2em;
+            margin-bottom: 10px;
+            transition: color 100ms;
+        }
+
+        .fa-gift {
+            color: #1259c3;
+            font-size: 2em;
+            margin-bottom: 10px;
+            transition: color 100ms;
+        }
+
+        .fa-user-shield {
+            color: #1259c3;
+            font-size: 2em;
+            margin-bottom: 10px;
+            transition: color 100ms;
+        }
+
+        #copy {
+            text-align: left;
+            font-size: 9px;
+            padding: 30px 15px 10px 15px;        
+        }
+
+        .fa-credit-card:hover, .fa-gift:hover, .fa-user-shield:hover {
+            color: #39b54a;
+        }
+
+
+
+@media (min-width: 361px) {
+        .buscador, .logo, #lema {
+            width: 33%;
+        }
+
+        #lema {
+            padding-top: 0px;
+            padding-left: 10px;
+        }
+
+        .menues {
+            display: flex;
+            flex-flow: row wrap;
+            padding: 10px 20px 0px 20px;            
+        }
+        
+            .site_navbar {
+                display: block;
+                width: 49%;                
+            }
+
+            .login_navbar {
+                display: block;
+                width: 49%;                
+            }    
+        
+                .site_navbar ul {
+                    display: flex;
+                    flex-flow: row wrap; 
+                    justify-content: flex-start;                   
+                }
+
+                .login_navbar ul {
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: flex-end;                    
+                }
+
+                    .site_navbar li {
+                        margin: 0px 7px;
+                    }
+
+                    .login_navbar li {
+                        margin: 0px 7px;   
+                    }
+
+        .burger-menu {
+            display: none;
+        }
+
+    article {
+        /*box-shadow: 0px 0px 10px rgb(100,100,100); Descartadas por consigna nueva */
+        flex: 0 1 45%;
+    }
+        /*.descripciones {
+            display: block;
+        } Descartadas por consigna nueva */
+
+    .register .campo_foto {
+        display: flex;
+        padding: 5px;
+        align-items: baseline;
+    }
+
+    .register .campo_foto label {
+        font-size: 14px;
+        width: 45%;                    
+    }
+
+    .register .campo_foto input {
+        margin-left: 5px;                
+        width: 53%;
+    }
+
+    footer {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+        footer .item {            
+            width: 32%;
+        }
+
+        #copy {
+            flex: 1 1 100%;
+        }
+}
+
+@media (min-width: 769px) {
+        /*.site_navbar {
+            display: block;
+        }
+
+        .login_navbar {
+            display: block;
+        }*/
+
+        /*.burger-menu {
+            display: none;
+        }*/
+    
+    header img {
+        width: 60%;
+    }
+    
+    .encabezado {
+        padding: 20px 70px;
+    }
+    
+        .boxbuscador {
+            width: 90%;            
+        }
+        .buscador button {
+            width: 23px;
+            height: 25px;
+        }
+
+    .menues {
+        padding: 10px 50px 0px 70px; 
+    }
+
+    article {
+        /*box-shadow: 0px 0px 10px rgb(100,100,100); Descartadas por consigna nueva */
+        flex: 0 1 20%;
+    }
+
+    #lema {
+        text-align: right;
+        padding-right: 1%;
+    }
+
+    .register, .login {
+        margin-top: 80px;
+    }
+
+    .register .campo input, .login .campo input {
+        margin-left: 5px;                
+        width: 20%;                                
+    }
+
+    .register .campo_categorias, .register .opciones_radio {
+        width: 20%;
+    }
+
+    .register .campo label, .register .campo_foto label, .login .campo label {
+        font-size: 14px;
+        width: 45%;
+        text-align: right;
+        margin-right: 15px;
+    }
+
+    .register .campo_categorias input, .register .opciones_radio input {
+        width: 15%;
+    }
+
+    .register .campo_foto input {
+        margin-left: 5px;                
+        width: 50%;
+    }
+}   
